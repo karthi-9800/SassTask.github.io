@@ -1,0 +1,11 @@
+$theme-colors: (
+    "primary": #3498db,
+    "secondary": #2ecc71,
+    "danger": #e74c3c
+);
+
+@each $name, $color in $theme-colors {
+    .text-#{$name} {
+        color: $color;
+    }
+}
